@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>bip.leituraarquivo.com.br</groupId>
 	<artifactId>leituraarquivo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<!--version>0.0.1-SNAPSHOT</version-->
 	<name>leituraarquivo</name>
 	<description>Leitura de arquivos</description>
 	<properties>
