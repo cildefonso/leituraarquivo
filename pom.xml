@@ -16,6 +16,13 @@
 	<properties>
 		<java.version>11</java.version>
 		<org.jacoco.version>0.8.5</org.jacoco.version>
+   		<!-- nome do projeto -->
+   		<sonar.projectkey>leituraarquivo</sonar.projectkey>
+   		<!-- O endereço que leva à sua instalação do Sonar -->
+   		<sonar.host.url>http://localhost:9000</sonar.host.url>
+   		<!-- O login do seu usuário -->
+   		<sonar.login>e45c4f04a694fda86c3217e7e455bd4409756d03</sonar.login>
+
 	</properties>
 	<dependencies>
 	    <dependency>
