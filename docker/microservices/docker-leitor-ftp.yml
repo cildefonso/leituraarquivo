@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  leituraarquivo:
+    image: "leituraarquivo:${CODE_SC_HG}"
+    #container_name: leitor-ftp
+    ports:
+      - "8081:8080"     
+    environment:
+      - spring_datasource_url=jdbc:postgresql://172.18.0.1/gnus
+      - s3_host=http://172.18.0.1:9444/s3
+      - ftp_server=172.18.0.1
+      - kafka_bootstrap-servers=172.18.0.1:9092
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
